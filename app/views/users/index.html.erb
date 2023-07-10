@@ -1,0 +1,21 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Users</h1>
+
+<h2>Here's How We Feel About Tofu:</h2>
+<ul>
+  <% @tofu.split(" ").each do |word| %>
+    <li><%= word %></li>
+  <% end %>
+</ul>
+
+<div id="users">
+  <% @users.each do |user| %>
+    <%= render user %>
+    <p>
+      <%= link_to "Show this user", user %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New user", new_user_path %>
