@@ -1,3 +1,6 @@
+# SELF: START HERE!
+* https://www.railstutorial.org/book/toy_app#sec-microposts_resource
+
 # README
 
 This README would normally document whatever steps are necessary to get the

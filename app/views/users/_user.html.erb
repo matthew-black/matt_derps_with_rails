@@ -9,6 +9,7 @@
     <%= user.email %>
   </p>
   
+  <%# Only render created_at data on the "users#show" view: %>
   <% if params[:controller] == "users" && params[:action] == "show" %>
     <strong>Created At:</strong>
     <%= user.created_at %>
