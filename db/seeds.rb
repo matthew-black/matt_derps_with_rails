@@ -5,3 +5,13 @@
 #
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
+#
+# Reset the users table:
+User.destroy_all
+
+# Insert three lovely instructors into the users table:
+User.create!([
+  {name: "Andrew", email: "andrew@email.com"},
+  {name: "Key", email: "key@email.com"},
+  {name: "Matthew", email: "matthew@email.com"},
+])
